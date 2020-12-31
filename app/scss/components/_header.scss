@@ -1,1 +1,51 @@
-//
+.header {
+    padding-top: 59px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__svg {
+        width: 41px;
+        height: 41px;
+        fill: $mainColor;
+    }
+
+    &__txt {
+        margin-left: 12px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #233348;
+    }
+}
+
+.nav {
+    width: 545px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        color: #1f1534;
+        opacity: 0.5;
+        transition: 0.2s;
+
+        &:hover {
+            font-weight: 700;
+            opacity: 1;
+        }
+    }
+
+    @include media(970) {
+        display: none;
+    }
+}

@@ -23,7 +23,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 30px;
-    max-width: 1170px;
+    max-width: #{$containerMW + px};
 
     @include media(650) {
         padding: 0 15px;

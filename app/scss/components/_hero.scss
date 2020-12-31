@@ -1,0 +1,93 @@
+.hero {
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 53px;
+    }
+
+    &__dots-decore {
+        position: absolute;
+        left: -160px;
+        top: 60px;
+        z-index: 10;
+        width: 79px;
+        height: 113px;
+        background: url("../img/dots-decore.png") center / cover no-repeat;
+    }
+
+    &__desc {
+        width: 445px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #000;
+    }
+
+    &__txt {
+        margin-top: 25px;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    &__btn {
+        margin-top: 45px;
+    }
+
+    &__img {
+        width: 693px;
+        height: 598px;
+        background: url("../img/hero__img.jpg") center / cover no-repeat;
+    }
+
+    @include media(1200) {
+        &__img {
+            width: 460px;
+            height: 400px;
+        }
+    }
+
+    @include media(970) {
+        &__img {
+            width: 360px;
+            height: 300px;
+            min-width: 360px;
+            min-height: 300px;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    border: 1.4px solid $mainColor;
+    border-radius: 55px;
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: center;
+    color: $mainColor;
+    background-color: transparent;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: $mainColor;
+    }
+}
+
+.btn_revers {
+    color: #fff;
+    background-color: $mainColor;
+
+    &:hover {
+        color: $mainColor;
+        background-color: transparent;
+    }
+}
