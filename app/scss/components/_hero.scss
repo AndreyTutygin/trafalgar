@@ -14,7 +14,7 @@
         z-index: 10;
         width: 79px;
         height: 113px;
-        background: url("../img/dots-decore.png") center / cover no-repeat;
+        background: url("../img/dots-decor.png") center / cover no-repeat;
     }
 
     &__desc {
@@ -46,6 +46,10 @@
     }
 
     @include media(1200) {
+        &__container {
+            padding-top: 100px;
+        }
+
         &__img {
             width: 460px;
             height: 400px;
@@ -53,11 +57,53 @@
     }
 
     @include media(970) {
+        &__container {
+            justify-content: space-evenly;
+        }
+
+        &__desc {
+            max-width: 288px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 39px;
+        }
+
+        &__txt {
+            margin-top: 8px;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        &__btn {
+            margin-top: 27px;
+        }
+
         &__img {
             width: 360px;
             height: 300px;
-            min-width: 360px;
-            min-height: 300px;
+        }
+    }
+
+    @include media(700) {
+        &__container {
+            padding-top: 80px;
+        }
+
+        &__desc {
+            z-index: 1;
+            max-width: 100%;
+        }
+
+        &__img {
+            position: absolute;
+            right: 0;
+            top: 135px;
+            width: 260px;
+            height: 220px;
+            min-width: 260px;
+            min-height: 220px;
         }
     }
 }
@@ -79,6 +125,13 @@
     &:hover {
         color: #fff;
         background-color: $mainColor;
+    }
+
+    @include media(970) {
+        width: 140px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 38px;
     }
 }
 
