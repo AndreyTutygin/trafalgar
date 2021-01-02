@@ -20,14 +20,42 @@
     &__svg {
         width: 41px;
         height: 41px;
-        fill: $mainColor;
     }
 
     &__txt {
         margin-left: 12px;
         font-weight: 700;
         font-size: 24px;
-        color: #233348;
+    }
+
+    &_bgc {
+        &_white {
+            .logo__svg {
+                fill: $mainColor;
+            }
+
+            .logo__txt {
+                color: #233348;
+            }
+
+            .logo__symbol {
+                fill: #fff;
+            }
+        }
+
+        &_main {
+            .logo__svg {
+                fill: #fff;
+            }
+
+            .logo__txt {
+                color: #fff;
+            }
+
+            .logo__symbol {
+                fill: $mainColor;
+            }
+        }
     }
 }
 
