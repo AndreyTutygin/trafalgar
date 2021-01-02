@@ -1,0 +1,140 @@
+.articles {
+    padding-top: 200px;
+
+    &__section-txt {
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 90px;
+    }
+
+    &__img {
+        border-radius: 20px 20px 0 0;
+        width: 350px;
+        height: 240px;
+
+        &_1 {
+            background: url("../img/articles__img_1.jpg") center / cover no-repeat;
+        }
+
+        &_2 {
+            background: url("../img/articles__img_2.jpg") center / cover no-repeat;
+        }
+
+        &_3 {
+            background: url("../img/articles__img_3.jpg") center / cover no-repeat;
+        }
+    }
+
+    &__txt {
+        border-radius: 0 0 20px 20px;
+        padding: 20px 50px 30px 30px;
+        width: 350px;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+        background-color: #fff;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 32px;
+        color: #000;
+    }
+
+    &__parag {
+        margin-top: 12px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 25px;
+        border-radius: 0 10px 10px 0;
+        padding-right: 10px;
+        font-size: 17px;
+        line-height: 28px;
+        color: $mainColor;
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+            background-color: $mainColor;
+
+            .articles__svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__svg {
+        margin-left: 13px;
+        width: 14px;
+        height: 9px;
+        fill: $mainColor;
+        transition: 0.4s;
+    }
+
+    &__btn {
+        margin: 69px auto 0;
+    }
+
+    @include media(1200) {
+        &__img {
+            width: 250px;
+            height: 140px;
+        }
+
+        &__txt {
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        &__parag {
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+        &__link {
+            font-size: 15px;
+        }
+    }
+
+    @include media(970) {
+        &__list {
+            margin-top: 48px;
+        }
+
+        &__btn {
+            margin-top: 25px;
+        }
+    }
+
+    @include media(809) {
+        &__item {
+            &:nth-child(3) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    @include media(529) {
+        &__item {
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
