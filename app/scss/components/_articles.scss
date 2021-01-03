@@ -9,7 +9,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-top: 90px;
+        margin-top: 106px;
     }
 
     &__img {
@@ -55,7 +55,7 @@
     &__link {
         display: inline-block;
         margin-top: 25px;
-        border-radius: 0 10px 10px 0;
+        border-bottom: 2px solid transparent;
         padding-right: 10px;
         font-size: 17px;
         line-height: 28px;
@@ -64,16 +64,12 @@
         cursor: pointer;
 
         &:hover {
-            color: #fff;
-            background-color: $mainColor;
-
-            .articles__svg {
-                fill: #fff;
-            }
+            border-color: $mainColor;
         }
     }
 
     &__svg {
+        display: inline-block;
         margin-left: 13px;
         width: 14px;
         height: 9px;

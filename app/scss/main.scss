@@ -3,10 +3,12 @@
 @import "fonts";
 @import "vendor";
 @import "settings";
+@import "./../../node_modules/swiper/swiper-bundle.min.css";
 @import "./components/header";
 @import "./components/burger";
 @import "./components/hero";
 @import "./components/services";
 @import "./components/download";
+@import "./components/reviews";
 @import "./components/articles";
 @import "./components/footer";

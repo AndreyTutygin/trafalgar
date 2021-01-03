@@ -54,7 +54,6 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 56px;
-        color: #000;
 
         &::after {
             content: "";
@@ -68,6 +67,22 @@
             width: 56px;
             height: 2px;
             background-color: #000;
+        }
+
+        &_black {
+            color: #000;
+
+            &::after {
+                background-color: #000;
+            }
+        }
+
+        &_white {
+            color: #fff;
+
+            &::after {
+                background-color: #fff;
+            }
         }
     }
 
