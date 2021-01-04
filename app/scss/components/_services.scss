@@ -9,6 +9,14 @@
         text-align: center;
     }
 
+    &__dots-decore {
+        right: 29px;
+        top: 545px;
+        width: 130px;
+        height: 113px;
+        background: url("../img/services__dots-decore.png") center / cover no-repeat;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -19,6 +27,13 @@
 
     &__btn {
         margin: 69px auto 0;
+    }
+
+    &__blot-decore {
+        left: -396px;
+        top: 210px;
+        width: 1227px;
+        height: 671px;
     }
 
     @include media(1200) {
@@ -41,11 +56,7 @@
 
 .blot-decore {
     position: absolute;
-    left: -405px;
-    top: 0;
     z-index: -1;
-    width: 1337px;
-    height: 971px;
 }
 
 .section-txt {

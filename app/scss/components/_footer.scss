@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     margin-top: 208px;
     padding: 118px 0 108px;
     font-weight: 300;
@@ -45,6 +46,23 @@
         }
     }
 
+    &__dots-decore {
+        right: 92px;
+        top: -72px;
+        width: 130px;
+        height: 113px;
+        background: url("../img/services__dots-decore.png") center / cover no-repeat;
+
+        &_white {
+            left: -17px;
+            bottom: -17px;
+            z-index: 1;
+            width: 130px;
+            height: 113px;
+            background: url("../img/dots-decore_white.png") center / cover no-repeat;
+        }
+    }
+
     @include media(970) {
         margin-top: 70px;
         padding: 30px 0;
@@ -87,6 +105,14 @@
 
             &:first-child {
                 margin-bottom: 10px;
+            }
+        }
+
+        &__dots-decore {
+            display: none;
+
+            &_white {
+                display: none;
             }
         }
     }

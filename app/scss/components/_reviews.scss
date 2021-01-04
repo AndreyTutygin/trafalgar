@@ -1,6 +1,10 @@
 .reviews {
     padding: 235px 0 85px;
 
+    &__container {
+        position: relative;
+    }
+
     &__bg {
         margin: 0 auto;
         border-radius: 24px;
@@ -12,6 +16,23 @@
 
     &__section-txt {
         text-align: center;
+    }
+
+    &__dots-decore {
+        left: 29px;
+        top: 273px;
+        width: 130px;
+        height: 113px;
+        background: url("../img/services__dots-decore.png") center / cover no-repeat;
+
+        &_white {
+            right: 30px;
+            top: -14px;
+            z-index: 1;
+            width: 130px;
+            height: 113px;
+            background: url("../img/dots-decore_white.png") center / cover no-repeat;
+        }
     }
 
     @include media(970) {
@@ -30,6 +51,16 @@
         &__bg {
             padding: 20px 0 50px;
             background: transparent;
+        }
+
+        &__dots-decore {
+            left: -49px;
+            top: 310px;
+
+            &_white {
+                right: -49px;
+                top: -92px;
+            }
         }
     }
 }

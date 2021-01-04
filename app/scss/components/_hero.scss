@@ -8,10 +8,8 @@
     }
 
     &__dots-decore {
-        position: absolute;
         left: -160px;
         top: 60px;
-        z-index: 10;
         width: 79px;
         height: 113px;
         background: url("../img/dots-decor.png") center / cover no-repeat;
@@ -143,4 +141,9 @@
         color: $mainColor;
         background-color: transparent;
     }
+}
+
+.dots-decore {
+    position: absolute;
+    z-index: -1;
 }

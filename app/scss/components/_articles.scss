@@ -1,6 +1,10 @@
 .articles {
     padding-top: 200px;
 
+    &__container {
+        position: relative;
+    }
+
     &__section-txt {
         text-align: center;
     }
@@ -81,6 +85,22 @@
         margin: 69px auto 0;
     }
 
+    &__dots-decore {
+        left: 29px;
+        top: 121px;
+        width: 130px;
+        height: 113px;
+        background: url("../img/services__dots-decore.png") center / cover no-repeat;
+    }
+
+    &__blot-decore {
+        right: -628px;
+        top: 71px;
+        width: 1227px;
+        height: 557px;
+        transform: rotate(180deg);
+    }
+
     @include media(1200) {
         &__img {
             width: 250px;
@@ -133,6 +153,10 @@
             &:nth-child(2) {
                 margin-top: 30px;
             }
+        }
+
+        &__dots-decore {
+            display: none;
         }
     }
 }
