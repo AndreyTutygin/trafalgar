@@ -6,6 +6,7 @@ import './components/scroll';
 const slider = new Swiper('.reviews-slider', {
     spaceBetween: 100,
     speed: 800,
+    grabCursor: true,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

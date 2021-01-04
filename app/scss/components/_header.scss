@@ -16,46 +16,14 @@
 .logo {
     display: flex;
     align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #233348;
 
     &__svg {
+        margin-right: 12px;
         width: 41px;
         height: 41px;
-    }
-
-    &__txt {
-        margin-left: 12px;
-        font-weight: 700;
-        font-size: 24px;
-    }
-
-    &_bgc {
-        &_white {
-            .logo__svg {
-                fill: $mainColor;
-            }
-
-            .logo__txt {
-                color: #233348;
-            }
-
-            .logo__symbol {
-                fill: #fff;
-            }
-        }
-
-        &_main {
-            .logo__svg {
-                fill: #fff;
-            }
-
-            .logo__txt {
-                color: #fff;
-            }
-
-            .logo__symbol {
-                fill: $mainColor;
-            }
-        }
     }
 }
 
@@ -73,12 +41,43 @@
         transition: 0.2s;
 
         &:hover {
-            font-weight: 700;
             opacity: 1;
         }
     }
 
     @include media(970) {
         display: none;
+    }
+}
+
+.mobile-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 140px 0 30px;
+    text-align: center;
+    color: #fff;
+    background-color: $mainColor;
+    transform: translate(0, -370px);
+    transition: 0.5s;
+
+    &__item {
+        width: 100%;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 10px 20px;
+        width: 100%;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: darken($mainColor, 20%);
+        }
+    }
+
+    &_active {
+        transform: translate(0, 0);
     }
 }
