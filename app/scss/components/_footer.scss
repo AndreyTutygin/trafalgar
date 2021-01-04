@@ -46,6 +46,7 @@
     }
 
     @include media(970) {
+        margin-top: 70px;
         padding: 30px 0;
 
         &__container {

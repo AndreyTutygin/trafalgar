@@ -9,10 +9,11 @@ const slider = new Swiper('.reviews-slider', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
     },
 
     navigation: {
-        nextEl: '.button-next',
-        prevEl: '.button-prev',
+        nextEl: '.arrow-btn__next',
+        prevEl: '.arrow-btn__prev',
     },
 });

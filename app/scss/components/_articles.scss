@@ -109,6 +109,8 @@
     }
 
     @include media(970) {
+        padding-top: 110px;
+
         &__list {
             margin-top: 48px;
         }
